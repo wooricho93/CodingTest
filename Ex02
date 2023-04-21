@@ -1,0 +1,8 @@
+/* 해당 년도의 나이 구하기 */
+class Solution {
+    public int solution(int age) {
+        int answer = 0;
+        answer = 2022 - age + 1;
+        return answer;
+    }
+}
