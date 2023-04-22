@@ -1,0 +1,18 @@
+/* 숫자 배열의 짝수, 홀수 개수 구하기 */
+class Solution {
+    public int[] solution(int[] num_list) {
+        int n = 0;
+        int m = 0;
+        
+        for (int i = 0; i < num_list.length; i++) {
+            if (num_list[i] % 2 == 0) {
+                n += 1;
+            } else {
+                m += 1;
+            }
+        }
+
+        int[] answer = {n, m};
+        return answer;
+    }
+}
