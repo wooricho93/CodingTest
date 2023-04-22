@@ -1,0 +1,11 @@
+/* 음식 가격 계산하기(+서비스) */
+class Solution {
+    public int solution(int n, int k) {
+        int answer = 0;
+        if (n/10 > 0) {
+            k -= 1 * (n /10);
+        }
+        answer = n * 12000 + k * 2000;
+        return answer;
+    }
+}
