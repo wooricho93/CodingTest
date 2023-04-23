@@ -1,0 +1,9 @@
+/* 물건 구매 시 최대 물건 개수와 남은 금액 배열로 반환하기 */
+class Solution {
+    public int[] solution(int money) {
+        int[] answer = new int[2];
+        answer[0] = money / 5500;
+        answer[1] = money % 5500;
+        return answer;
+    }
+}
