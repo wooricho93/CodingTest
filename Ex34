@@ -1,0 +1,6 @@
+/* number가 n의 배수이면서 m의 배수일 시 1, 아닐 시 0 반환하기 */
+class Solution {
+    public int solution(int number, int n, int m) {
+        return number % n == 0 && number % m == 0 ? 1 : 0;
+    }
+}
