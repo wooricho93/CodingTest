@@ -1,0 +1,7 @@
+/* 실수의 정수 부분만 반환하기 */
+class Solution {
+    public int solution(double flo) {
+        int answer = (int)Math.floor(flo);
+        return answer;
+    }
+}
