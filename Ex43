@@ -1,0 +1,15 @@
+/* 입력한 문자를 n번 반복하여 출력하기 */
+import java.util.Scanner;
+
+public class Solution {
+    public static void main(String[] args) {
+        Scanner sc = new Scanner(System.in);
+        String str = sc.next();
+        String st = new String(); 
+        int n = sc.nextInt();
+        for (int i = 1; i <= n; i++) {
+            st += str;
+        }
+        System.out.print(st);
+    }
+}
