@@ -1,0 +1,10 @@
+/* my_string의 인덱스 n부터 overwrite_string의 길이만큼 overwrite_string으로 바꾸기 */
+class Solution {
+    public String solution(String my_string, String overwrite_string, int s) {
+        String answer = "";
+        StringBuilder sb = new StringBuilder(my_string);
+        sb.replace(s, overwrite_string.length() + s, overwrite_string);
+        answer = String.valueOf(sb);
+        return answer;
+    }
+}
