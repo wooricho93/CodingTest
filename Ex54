@@ -1,0 +1,17 @@
+/* 배열의 홀수와 짝수를 문자열처럼 이어붙인 수들의 합 구하기 */
+class Solution {
+    public int solution(int[] num_list) {
+        int answer = 0;
+        String str1 = new String();
+        String str2 = new String();
+        for (int i = 0; i < num_list.length; i++) {
+            if (num_list[i] % 2 != 0) {
+                str1 += String.valueOf(num_list[i]);
+            } else {
+                str2 += String.valueOf(num_list[i]);
+            }
+        }
+        answer = Integer.parseInt(str1) + Integer.parseInt(str2);
+        return answer;
+    }
+}
