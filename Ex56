@@ -1,0 +1,15 @@
+/*  정수 a, b, c가 모두 같은 값일 경우 (a + b + c) * (a^2 + b^2 + c^2) * (a^3 + b^3 + c^3)을,
+두 개만 같을 경우 (a + b + c) * (a^2 + b^2 + c^2)을, 다 다를 경우 세 숫자의 합만 반환하기 */
+class Solution {
+    public int solution(int a, int b, int c) {
+        int answer = 0;
+         if ((a == b && b != c && a != c) || (a != b && b == c && a != c) || (a != b && b != c && a == c)) {
+            answer = (a + b + c) * (a * a + b * b + c * c);
+        } else if (a == b && b == c) {
+            answer = (a + b + c) * (a * a + b * b + c * c) * (a * a * a + b * b * b + c * c * c);
+        } else {
+             answer = a + b + c;
+         }
+        return answer;
+    }
+}
