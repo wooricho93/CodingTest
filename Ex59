@@ -1,0 +1,10 @@
+/* 문자열 my_string이 is_prefix로 시작할 경우 1, 아닐 경우 0 반환하기 */
+class Solution {
+    public int solution(String my_string, String is_prefix) {
+        int answer = 0;
+        if (my_string.startsWith(is_prefix)) {
+            answer = 1;
+        }
+        return answer;
+    }
+}
