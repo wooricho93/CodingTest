@@ -1,0 +1,17 @@
+/* 배열 num_list에서 마지막 원소가 그 전 원소보다 크면 마지막 원소에서 그 전 원소를 뺀 값을, 크지 않으면 마지막 원소의 2배 값을 추가한 새 배열 구하기 */
+import java.util.*;
+
+class Solution {
+    public int[] solution(int[] num_list) {
+        int[] answer = {};
+        answer = Arrays.copyOfRange(num_list, 0, num_list.length + 1);
+        for (int i = answer.length - 1; i > answer.length - 2; i--) {
+            if (answer[i - 1] > answer[i - 2]) {
+                answer[i] = answer[i - 1] - answer[i - 2];
+            } else {
+                answer[i] = answer[i - 1] * 2;
+            }
+        }
+        return answer;
+    }
+}
