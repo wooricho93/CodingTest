@@ -1,0 +1,10 @@
+/* 문자열 myString에 문자열 pat이 포함되어 있을 경우 1, 아닐 경우 0 반환하기(대소문자 구분X) */
+class Solution {
+    public int solution(String myString, String pat) {
+        int answer = 0;
+        if (myString.toLowerCase().contains(pat.toLowerCase())) {
+            answer = 1;
+        }
+        return answer;
+    }
+}
