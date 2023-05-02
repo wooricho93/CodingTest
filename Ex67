@@ -1,0 +1,11 @@
+/* 배열에서 가장 작은 5개의 수를 제외한 나머지 숫자들을 오름차순으로 정렬한 배열 구하기 */
+import java.util.*;
+
+class Solution {
+    public int[] solution(int[] num_list) {
+        int[] answer = new int[num_list.length - 5];
+        Arrays.sort(num_list);
+        System.arraycopy(num_list, 5, answer, 0, num_list.length - 5);
+        return answer;
+    }
+}
