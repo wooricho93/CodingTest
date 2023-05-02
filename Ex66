@@ -1,0 +1,8 @@
+/* 특정 문자를 대문자로 바꾼 문자열 반환하기 */
+class Solution {
+    public String solution(String my_string, String alp) {
+        String answer = "";
+        answer = my_string.replace(alp, alp.toUpperCase());
+        return answer;
+    }
+}
