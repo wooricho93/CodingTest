@@ -1,0 +1,8 @@
+/* 문자열 안에 m이 있을 경우 m을 rn으로 바꾼 문자열 반환하기 */
+class Solution {
+    public String solution(String rny_string) {
+        String answer = "";
+        answer = rny_string.replace("m", "rn");
+        return answer;
+    }
+}
