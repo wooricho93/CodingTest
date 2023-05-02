@@ -1,0 +1,10 @@
+/* 문자열 my_string이 target을 포함하고 있다면 1, 아니면 0 반환하기 */
+class Solution {
+    public int solution(String my_string, String target) {
+        int answer = 0;
+        if (my_string.contains(target)) {
+            answer = 1;
+        }
+        return answer;
+    }
+}
