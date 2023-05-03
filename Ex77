@@ -1,0 +1,14 @@
+/* 2차원 정수 배열 arr가 있을 때, arr[i][j]와 arr[j][i]가 모두 같을 경우 1, 하나라도 아닐 경우에는 0 반환하기 */
+class Solution {
+    public int solution(int[][] arr) {
+        int answer = 1;
+        for (int i = 0; i < arr.length; i++) {
+            for (int j = 0; j < arr.length; j++) {
+                if (arr[i][j] != arr[j][i]) {
+                    answer = 0;
+                }
+            }
+        }
+        return answer;
+    }
+}
