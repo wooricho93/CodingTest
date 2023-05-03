@@ -1,0 +1,10 @@
+/* 문자열 배열과 이차원 정수 배열이 있을 때, 문자열 배열의 각 요소를 이차원 정수 배열을 기반으로 한 인덱스로 잘라서 붙인 문자열 반환하기 */
+class Solution {
+    public String solution(String[] my_strings, int[][] parts) {
+        String answer = "";
+        for (int i = 0; i < my_strings.length; i++) {
+            answer += my_strings[i].substring(parts[i][0], parts[i][1] + 1);
+        }
+        return answer;
+    }
+}
