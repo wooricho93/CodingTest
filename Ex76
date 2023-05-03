@@ -1,0 +1,11 @@
+/* 랜덤한 숫자로 구성된 정수 배열에서 가장 작은 5개의 수를 오름차순으로 정렬한 배열 구하기 */
+import java.util.*;
+
+class Solution {
+    public int[] solution(int[] num_list) {
+        int[] answer = new int[5];
+        Arrays.sort(num_list);
+        System.arraycopy(num_list, 0, answer, 0, answer.length);
+        return answer;
+    }
+}
