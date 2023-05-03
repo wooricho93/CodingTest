@@ -1,0 +1,14 @@
+/* 문자열의 각 요소가 l보다 사전 순으로 앞설 경우 해당 문자를 l로 대체한 문자열 구하기 */
+class Solution {
+    public String solution(String myString) {
+        String answer = "";
+        String[] arr = myString.split("");
+        for (int i = 0; i < arr.length; i++) {
+            if (arr[i].compareTo("l") < 0) {
+                arr[i] = "l";
+            }
+            answer += arr[i];
+        }
+        return answer;
+    }
+}
