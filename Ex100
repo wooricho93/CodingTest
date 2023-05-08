@@ -1,0 +1,16 @@
+/* 배열의 요소들의 곱 중 가장 큰 값 반환하기 */
+class Solution {
+    public int solution(int[] numbers) {
+        int answer = -100000000;
+        int max = 0;
+        for (int i = 0; i < numbers.length; i++) {
+            for (int j = i + 1; j < numbers.length; j++) {
+                max = numbers[i] * numbers[j];
+                if (max > answer) {
+                    answer = max;
+                }
+            }
+        }
+        return answer;
+    }
+}
