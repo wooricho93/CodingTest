@@ -1,0 +1,10 @@
+/* 문자열 cipher에 숨어 있는 암호 구하기(code라는 수의 배수 번째 글자가 암호) */
+class Solution {
+    public String solution(String cipher, int code) {
+        String answer = "";
+        for (int i = code; i <= cipher.length(); i+=code) {
+            answer += String.valueOf(cipher.charAt(i - 1));
+        }
+        return answer;
+    }
+}
