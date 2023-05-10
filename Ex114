@@ -1,0 +1,21 @@
+/* 문자열에서 p와 y의 개수를 비교하여 같거나 없을 경우 true, 다르면 false 반환하기 */
+class Solution {
+    boolean solution(String s) {
+        boolean answer = true;
+        int p = 0;
+        int y = 0;
+        for (int i = 0; i < s.length(); i++) {
+            if (s.toLowerCase().charAt(i) == 'p') {
+                p++;
+            } else if (s.toLowerCase().charAt(i) == 'y') {
+                y++;
+            }
+        }
+        if (p == y || p == 0 && y == 0) {
+            answer = true;
+        } else  {
+            answer = false;
+        }
+        return answer;
+    }
+}
