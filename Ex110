@@ -1,0 +1,13 @@
+/* 정수 n을 나눴을 때 나머지가 1이 되게 하는 가장 작은 수 구하기 */
+class Solution {
+    public int solution(int n) {
+        int answer = 0;
+        for (int i = 1; i <= n; i++) {
+            if (n % i == 1) {
+                answer = i;
+                break;
+            }
+        }
+        return answer;
+    }
+}
