@@ -1,0 +1,6 @@
+/* 정수 num이 짝수일 경우 Even을, 홀수일 경우 Odd 반환하기 */
+class Solution {
+    public String solution(int num) {
+        return (num % 2 == 0) ? "Even" : "Odd";
+    }
+}
