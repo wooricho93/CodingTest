@@ -1,0 +1,12 @@
+/* 한 판에 여섯 조각인 피자를 n명이서 동일한 개수로 나누고자 할 때 필요한 최소 피자 판 수 구하기 */
+class Solution {
+    public int solution(int n) {
+        int answer = 1;
+        int i = 6;
+        while (i % n != 0) {
+            answer++;
+            i += 6;
+        }
+        return answer;
+    }
+}
