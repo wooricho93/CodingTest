@@ -1,0 +1,15 @@
+/* 정수 n이 n의 각 자리 수의 합으로 나뉠 경우 true를, 아닐 경우 false 반환하기 */
+class Solution {
+    public boolean solution(int x) {
+        boolean answer = true;
+        String s = String.valueOf(x);
+        int y = 0;
+        for (int i = 0; i < s.length(); i++) {
+            y += s.charAt(i) - '0';
+        }
+        if (x % y != 0) {
+            answer = false;
+        }
+        return answer;
+    }
+}
