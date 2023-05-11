@@ -1,0 +1,10 @@
+/* 정수 n의 제곱근이 양의 정수라면 제곱근에 1을 더한 값의 제곱을, 아니라면 -1 반환하기 */
+class Solution {
+    public long solution(long n) {
+        long answer = -1;
+        if (Math.pow((long)Math.sqrt(n), 2) == n) {
+            answer = (long)Math.pow(Math.sqrt(n) + 1, 2);
+        }
+        return answer;
+    }
+}
