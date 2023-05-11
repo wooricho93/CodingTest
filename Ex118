@@ -1,0 +1,16 @@
+/* 정수 n의 숫자들을 내림차순으로 정렬한 정수 구하기 */
+import java.util.*;
+
+class Solution {
+    public long solution(long n) {
+        long answer = 0;
+        String[] arr = String.valueOf(n).split("");
+        String str = new String();
+        Arrays.sort(arr);
+        for (int i = arr.length - 1; i >= 0; i--) {
+            str += arr[i];
+        }
+        answer = Long.parseLong(str);
+        return answer;
+    }
+}
