@@ -1,0 +1,8 @@
+/* 문자열에 가장 왼쪽에 위치한 하나의 혹은 연속된 0 제거하기 */
+class Solution {
+    public String solution(String n_str) {
+        int a = Integer.parseInt(n_str);
+        String answer = String.valueOf(a);
+        return answer;
+    }
+}
