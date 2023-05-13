@@ -1,0 +1,14 @@
+/* 문자열 배열에서 "ad"가 포함된 문자열을 제거한 배열 구하기 */
+import java.util.*;
+
+class Solution {
+    public List solution(String[] strArr) {
+        List<String> answer = new ArrayList<>();
+        for (int i = 0; i < strArr.length; i++) {
+            if (!strArr[i].contains("ad")) {
+                answer.add(strArr[i]);
+            }
+        }
+        return answer;
+    }
+}
