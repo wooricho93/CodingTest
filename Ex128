@@ -1,0 +1,14 @@
+/* 할 일 목록 배열과 완료여부를 나타내는 배열이 있을 때, 할 일 목록에서 완료된 항목을 제거한 배열 구하기 */
+import java.util.*;
+
+class Solution {
+    public List solution(String[] todo_list, boolean[] finished) {
+        List<String> answer = new ArrayList<>();
+        for (int i = 0; i < todo_list.length; i++) {
+            if (finished[i] == false) {
+                answer.add(todo_list[i]);
+            }
+        }
+        return answer;
+    }
+}
