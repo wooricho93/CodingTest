@@ -1,0 +1,14 @@
+/* 문자 배열에서 Kim의 위치를 찾아 "김서방은 index에 있다"라는 문구 반환하기 */
+class Solution {
+    public String solution(String[] seoul) {
+        int x = 0;
+        for (int i = 0; i < seoul.length; i++) {
+            if (seoul[i].equals("Kim")) {
+                x = i;
+                
+            }
+        }
+        String answer = "김서방은 " + x + "에 있다";
+        return answer;
+    }
+}
