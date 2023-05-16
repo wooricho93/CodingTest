@@ -1,0 +1,25 @@
+/* 정수가 콜라츠 추측에 의해 1이 될 때까지 반복해야 할 횟수 반환하기(단 주어진 정수가 1일 경우에는 0을, 500번 이상 반복해도 1이 되지 않을 경우에는 -1 반환) */
+class Solution {
+    public int solution(long num) {
+        int answer = 0;
+        if (num == 1) {
+            return 0;
+        }
+        while (true) {
+            if (num % 2 == 0) {
+                num = num / 2;
+                answer++;
+            } else {
+                num = 3 * num + 1;
+                answer++;
+            }
+            if (num == 1) {
+                break;
+            }
+        }
+        if (answer > 500) {
+            answer = -1;
+        }
+        return answer;
+    }
+}
