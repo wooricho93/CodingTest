@@ -1,0 +1,15 @@
+/* 정수 배열에서 특정 idx보다 크면서 값이 1인 가장 작은 인덱스 구하기 */
+class Solution {
+    public int solution(int[] arr, int idx) {
+        int answer = -1;
+        for (int i = idx; i < arr.length; i++) {
+            if (arr[i] != 1) {
+                continue;
+            } else {
+                answer = i;
+                break;
+            }
+        }
+        return answer;
+    }
+}
