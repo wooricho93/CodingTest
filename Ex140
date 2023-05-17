@@ -1,0 +1,16 @@
+/* 정수 n보다 작은 최대 팩토리얼 수 구하기 */
+class Solution {
+    public int solution(int n) {
+        int answer = 1;
+        int i = 1;
+        while (true) {
+            answer *= i;
+            if (answer > n) {
+                break;
+            }
+            i++;
+        }
+        answer = i - 1;
+        return answer;
+    }
+}
