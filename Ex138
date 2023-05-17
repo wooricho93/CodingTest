@@ -1,0 +1,12 @@
+/* 문자열을 문자 x 기준으로 나눴을 때, 나눠진 문자열 각각의 길이를 담은 배열 구하기 */
+class Solution {
+    public int[] solution(String myString) {
+        int[] answer = {};
+        String[] strArr = myString.split("x", -1);
+        answer = new int[strArr.length];
+        for (int i = 0; i < strArr.length; i++) {
+            answer[i] = strArr[i].length();
+        }
+        return answer;
+    }
+}
