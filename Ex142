@@ -1,0 +1,11 @@
+/* 뒤 4자리를 제외한 전화번호 "*"로 가리기 */
+class Solution {
+    public String solution(String phone_number) {
+        String answer = phone_number.substring(0, phone_number.length() - 4);
+        for (int i = 0; i < answer.length(); i++) {
+            answer = answer.replace(answer.charAt(i), '*');
+        }
+        answer += phone_number.substring(phone_number.length() - 4);
+        return answer;
+    }
+}
