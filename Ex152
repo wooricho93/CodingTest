@@ -1,0 +1,20 @@
+/* i부터 j까지의 수에 k가 포함되어 있는 개수 구하기 */
+class Solution {
+    public int solution(int i, int j, int k) {
+        int answer = 0;
+        if (i == j && j == k) {
+            return 1;
+        }
+        String str = new String();
+        for (int x = i; x <= j; x++) {
+            str += String.valueOf(x);
+        }
+        char ch = (char)(k + '0');
+        for (int x = 0; x < str.length(); x++) {
+            if (str.charAt(x) == ch) {
+                answer++;
+            }
+        }
+        return answer;
+    }
+}
