@@ -1,0 +1,10 @@
+/* x가 포함된 문자열을 x 기준으로 자른 후 사전 순으로 나열한 배열 구하기 */
+import java.util.*;
+
+class Solution {
+    public String[] solution(String myString) {
+        String[] answer = myString.replaceAll("[x]+", " ").trim().split(" ");
+        Arrays.sort(answer);
+        return answer;
+    }
+}
