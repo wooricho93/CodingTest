@@ -1,0 +1,10 @@
+/* 두 글자가 반복되는 패턴을 가진 문자열을 정수 n의 길이만큼 반환하기 */
+class Solution {
+    public String solution(int n) {
+        String answer = "";
+        for (int i = 1; i <= n; i++) {
+            answer += i % 2 !=0 ? "수" : "박";
+        }
+        return answer;
+    }
+}
