@@ -1,0 +1,10 @@
+/* 같은 길이의 정수 배열 2개가 있을 때, 배열의 같은 인덱스에 위치한 요소들의 곱을 합한 값 구하기 */
+class Solution {
+    public int solution(int[] a, int[] b) {
+        int answer = 0;
+        for (int i = 0; i < a.length; i++) {
+            answer += a[i] * b[i];
+        }
+        return answer;
+    }
+}
