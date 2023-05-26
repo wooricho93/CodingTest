@@ -1,0 +1,13 @@
+/* 문자열의 가장 가운데 글자 반환하기(문자열의 길이가 짝수일 경우, 가운데 2글자 반환) */
+class Solution {
+    public String solution(String s) {
+        String answer = "";
+        int x = s.length();
+        if (x % 2 != 0) {
+            answer = String.valueOf(s.charAt(x / 2));
+        } else {
+            answer = String.valueOf(s.charAt(x / 2 - 1)) + String.valueOf(s.charAt(x / 2));
+        }
+        return answer;
+    }
+}
