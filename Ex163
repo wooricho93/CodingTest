@@ -1,0 +1,16 @@
+/* 년도와 월, 일로 구성된 정수 배열 date1, date2가 있을 때, date1이 date2의 날짜보다 앞설 경우 1을, 아닐 경우 0 반환하기 */
+class Solution {
+    public int solution(int[] date1, int[] date2) {
+        int answer = 0;
+        for (int i = 0; i < date1.length; i++) {
+            if (date1[i] < date2[i]) {
+                answer = 1;
+                break;
+            } else if (date1[i] > date2[i]) {
+                answer = 0;
+                break;
+            }
+        }
+        return answer;
+    }
+}
