@@ -1,0 +1,12 @@
+/* boolean 변수 4개를 다음과 같이 조합했을 때 나오는 결과 구하기 */
+/* (x1 ∨ x2) ∧ (x3 ∨ x4) */
+/* ∨일 경우 하나만 true여도 true, ∧일 경우 둘 다 true여야 true */
+class Solution {
+    public boolean solution(boolean x1, boolean x2, boolean x3, boolean x4) {
+        boolean answer = false;
+        if ((x1 || x2) && (x3 || x4)) {
+            answer = true;
+        }
+        return answer;
+    }
+}
