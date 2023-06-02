@@ -1,0 +1,8 @@
+/* 1과 0으로 이루어진 이진수 문자열 두 개를 더한 이진수 결과 값 구하기 */
+class Solution {
+    public String solution(String bin1, String bin2) {
+        // Integer.parseInt(정수, 변환할 진수값)
+        String answer = Integer.toBinaryString(Integer.parseInt(bin1, 2) + Integer.parseInt(bin2, 2));
+        return answer;
+    }
+}
