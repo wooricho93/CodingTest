@@ -1,0 +1,16 @@
+/* 두 개의 정수 n과 m이 있을 때, "*"을 n개만큼 m줄 출력하기 */
+import java.util.Scanner;
+
+class Solution {
+    public static void main(String[] args) {
+        Scanner sc = new Scanner(System.in);
+        int a = sc.nextInt();
+        int b = sc.nextInt();
+        for (int i = 1; i <= b; i++) {
+            for (int j = 1; j < a; j++) {
+                System.out.print("*");
+            }
+            System.out.println("*");
+        }
+    }
+}
