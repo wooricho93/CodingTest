@@ -1,0 +1,9 @@
+/* 문자열 myString에서 문자열 pat으로 끝나는 가장 긴 부분의 문자열 잘라서 반환하기 */
+class Solution {
+    public String solution(String myString, String pat) {
+        // 문자열의 맨 끝에서부터 해당 문자열을 찾아서 인덱스를 반환한 후, 그 값을 문자열을 필요한 만큼만 자르는 함수에 대입. 끝나는 지점은 포함되지 않으므로
+           pat의 길이만큼을 추가로 더해줌
+        String answer = myString.substring(0, myString.lastIndexOf(pat) + pat.length());
+        return answer;
+    }
+}
