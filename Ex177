@@ -1,0 +1,17 @@
+/* 커피를 구매하려고 할 때, 배열의 요소가 americano, iceamericano, americanoice, hotamericano, americanohot 또는 anything일 경우 +4500을,
+   cafelatte, icecafelatte, cafelatteice, hotcafelatte, cafelattehot일 경우 +5000하여 최종 가격 구하기 */
+class Solution {
+    public int solution(String[] order) {
+        int answer = 0;
+        for (int i = 0; i < order.length; i++) {
+            // 배열의 요소에 americano나 anything이 포함되어 있을 경우 4500원 추가
+            if (order[i].contains("americano") || order[i].contains("anything")) {
+                answer += 4500;
+            // 그 외에는 모두 카페라떼와 관련되어 있기 때문에 5000원 추가
+            } else {
+                answer += 5000;
+            }
+        }
+        return answer;
+    }
+}
